@@ -349,7 +349,22 @@ footer h3 {
         padding: 0.5rem;
         font-size: 13px;
     }
+
+
+    .subscribe span {
+      
+      margin: 10px -3px 0px -5px;
   }
+
+  .menu-icon {
+     margin-left: 20px;
+}
+
+.grid-container-idc h2 {
+  display:none
+}
+
+}
 
 
 
@@ -362,15 +377,53 @@ footer h3 {
     .hero-text {
         bottom: 15%;
         width: 80%;
-        
-    
     }
+
+    .cta-section {
+      grid-template-columns: repeat(1, 1fr);
+      
   }
 
+    .text {
+    display: none; /* Oculta el texto de los enlaces */
+  }
+
+  .ver {
+    display: none;
+
+
+  }
+
+  .grid-container-idc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 30px 0px 40px 0px;
+    padding-top: 24px;
+    align-items: center;
+    align-content: center;
+  }
+
+  
+
+}
+
+
+
+
+  @media (min-width:700px) {
+
+    .noVer {
+
+      display: none;
+    }
+
+  }
 
 /* 925px */
 
-@media (max-width: 925px) {
+  @media (max-width: 925px) {
+
     .nav-list {
       display: none; /* Ocultar el menú en pantallas pequeñas */
       flex-direction: column;
