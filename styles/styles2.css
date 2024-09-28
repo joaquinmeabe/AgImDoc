@@ -1,0 +1,59 @@
+/* Estilos para el nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media (max-width: 900px) {
+    .nav-list {
+      display: none; /* Ocultar el menú en pantallas pequeñas */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 20px;
+    }
+  
+    .nav-list.show {
+      display: flex; /* Mostrar el menú cuando esté desplegado */
+    }
+  
+    .menu-icon {
+      display: block; /* Mostrar el ícono de hamburguesa */
+    }
+  
+    ul li {
+      margin-bottom: 20px; /* Espacio entre los elementos del menú */
+    }
+  }
+  
