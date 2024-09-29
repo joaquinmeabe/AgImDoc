@@ -391,6 +391,7 @@ footer h3 {
     .hero-text {
         bottom: 15%;
         width: 80%;
+        height: fit-content;
     }
 
     .cta-section {
@@ -418,7 +419,10 @@ footer h3 {
     align-content: center;
   }
 
-  
+  .hero img {
+
+    height: 400px;
+  }
 
 }
 
