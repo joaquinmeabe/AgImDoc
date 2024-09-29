@@ -81,11 +81,14 @@ nav {
 
  /* Estilo base para el ul de la navegación */
 .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    
+    display: none;
   }
+
+  /* Mostrar la lista de navegación cuando tiene la clase 'show-nav' */
+.nav-list.show-nav {
+  display: block;
+}
   
   .nav-list li {
     position: relative; /* Para que el submenú se posicione en relación con el elemento padre */
@@ -436,7 +439,7 @@ footer h3 {
   @media (max-width: 925px) {
 
     .nav-list {
-      display: none; /* Ocultar el menú en pantallas pequeñas */
+      display: flex
       flex-direction: column;
       position: absolute;
       top: 70px;
