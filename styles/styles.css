@@ -79,11 +79,11 @@ nav {
     font-size: 14px;
   }
 
- /* Estilo base para el ul de la navegación */
+ /* Estilo base para el ul de la navegación
 .nav-list {
     
     display: none;
-  }
+  } */
 
   /* Mostrar la lista de navegación cuando tiene la clase 'show-nav' */
 .nav-list.show-nav {
@@ -439,8 +439,8 @@ footer h3 {
   @media (max-width: 925px) {
 
     .nav-list {
-      display: flex;
-      /*flex-direction: column;*/
+      display: none; /* Ocultar el menú en pantallas pequeñas */
+      flex-direction: column;
       position: absolute;
       top: 70px;
       left: 50%; /* Centra el menú horizontalmente */
