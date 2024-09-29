@@ -439,8 +439,8 @@ footer h3 {
   @media (max-width: 925px) {
 
     .nav-list {
-      display: flex
-      flex-direction: column;
+      display: flex;
+      /*flex-direction: column;*/
       position: absolute;
       top: 70px;
       left: 50%; /* Centra el menú horizontalmente */
