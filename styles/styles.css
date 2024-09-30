@@ -39,6 +39,12 @@ header {
 header .logo h1 {
     font-size: 1.5rem;
 }
+
+.rever{
+
+  display: contents;
+}
+
 .logo {
 
   height: 33px;
@@ -301,7 +307,7 @@ h2 {
     margin: 2rem 0;
 }
 
-.cta-section .cta-item {
+/*.cta-section .cta-item {
     text-align: center;
     padding: 0.5rem;
     background-color: #ffffff;
@@ -310,6 +316,49 @@ h2 {
     border: 1px solid rgb(0, 0, 0);
     margin: 10px 0px 10px 10px;
     border-radius: 4px;
+}*/
+
+.foto {
+  background-image: url('/fotos/_oa_252539\ 05.01.23\ san\ baltazar01.JPG'); /* URL de tu imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 2rem; /* Espaciado interno */
+  color: white; /* Cambia el color del texto para que se vea sobre la imagen */
+  text-align: center; /* Centra el texto */
+  position: relative; /* Importante para asegurarse de que el contenido esté bien posicionado */
+}
+.foto2 {
+  background-image: url('/fotos/12.01.23\ Gauchito\ gil\ 1.jpg'); /* URL de tu imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 2rem; /* Espaciado interno */
+  color: white; /* Cambia el color del texto para que se vea sobre la imagen */
+  text-align: center; /* Centra el texto */
+  position: relative; /* Importante para asegurarse de que el contenido esté bien posicionado */
+}
+
+.foto3 {
+  background-image: url('/fotos/amanecer.jpg'); /* URL de tu imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 2rem; /* Espaciado interno */
+  color: white; /* Cambia el color del texto para que se vea sobre la imagen */
+  text-align: center; /* Centra el texto */
+  position: relative; /* Importante para asegurarse de que el contenido esté bien posicionado */
+}
+
+.cta-item button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 8px; /* Botón con esquinas redondeadas */
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .cta-section button {
@@ -424,6 +473,13 @@ footer h3 {
     height: 400px;
   }
 
+ .subscribe { 
+    position: relative;
+    right: 0% !important;
+    display: flex;
+    align-items: center;
+  }  
+
 }
 
 
@@ -469,6 +525,18 @@ footer h3 {
     .dropdown {
         top: 2%; /* Para que aparezca justo debajo del elemento principal */
         left: 70px;
+    }
+
+    .rever {
+      display: flex !important;
+      flex-direction: row-reverse;
+    }
+
+    .rever .subscribe { 
+      position: relative;
+      right: 50%;
+      display: flex;
+      align-items: center;
     }
 
 
