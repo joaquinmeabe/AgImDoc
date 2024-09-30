@@ -329,11 +329,7 @@ h2 {
   position: relative; /* Importante para asegurarse de que el contenido esté bien posicionado */
 }
 .foto2 {
-<<<<<<< HEAD
-  background-image: url('https://raw.githubusercontent.com/joaquinmeabe/AgImDoc/refs/heads/main/fotos/amanecer.jpg'); /* URL de tu imagen de fondo */
-=======
   background-image: url('https://raw.githubusercontent.com/joaquinmeabe/AgImDoc/refs/heads/main/fotos/12.01.23%20Gauchito%20gil%201.jpg'); /* URL de tu imagen de fondo */
->>>>>>> 021eff95d0240977da29ee376b186ea22e757258
   background-size: cover; /* Asegura que la imagen cubra todo el fondo */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
