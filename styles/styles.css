@@ -29,9 +29,8 @@ header {
     padding: 0.5rem 2rem;
     background-color: #ffffff;
     color: #fff;
-    
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     width: 100%;
     box-shadow: 0 0px 4px #9e9e9e;
 }
