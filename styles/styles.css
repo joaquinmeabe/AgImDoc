@@ -585,7 +585,7 @@ footer h3 {
       position: absolute;
       top: 70px;
       left: 50%; /* Centra el menú horizontalmente */
-        transform: translateX(-50%); /* Ajusta el menú para que esté perfectamente centrado */
+      transform: translateX(-50%); /* Ajusta el menú para que esté perfectamente centrado */
       width: 100%;
       background-color: #ffffff;
       padding: 20px;
