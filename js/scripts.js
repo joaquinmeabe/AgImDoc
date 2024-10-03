@@ -17,3 +17,26 @@ menuIcon.addEventListener('click', function () {
         icon.classList.add('fa-bars');
     }
 });
+
+
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel img');
+const totalImages = images.length;
+
+// Inicialmente mostrar la primera imagen
+images[currentIndex].classList.add('active');
+
+// Función para cambiar la imagen cada 10 minutos (600,000 ms)
+function changeImage() {
+    // Quitar la clase 'active' de la imagen actual
+    images[currentIndex].classList.remove('active');
+    
+    // Incrementar el índice
+    currentIndex = (currentIndex + 1) % totalImages;
+    
+    // Agregar la clase 'active' a la siguiente imagen
+    images[currentIndex].classList.add('active');
+}
+
+// Cambiar la imagen cada 10 minutos
+setInterval(changeImage, 300000); // 10 minutos en milisegundos.... ahora esta cada5 minutos
