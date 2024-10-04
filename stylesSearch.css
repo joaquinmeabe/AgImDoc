@@ -1,0 +1,155 @@
+.nav-Bus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    top: 76px;
+    padding: 20px 35px;
+}
+
+.nav-Bus p {
+
+    color: black;
+}
+
+
+.search-bar1 {
+    display: flex;
+
+}
+
+.hero-text1 {
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.centro {
+    position: relative;
+    display: flex;
+    top: 72px;
+    justify-content: center;
+    background-color: #335684;
+    color: white;
+    padding: 10px;
+}
+.search-bar1 button {
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.search-bar1 input {
+    width: 500px;
+    padding: 10px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "refe foto";
+    margin: 40px 0px;
+}
+
+.refe { 
+    grid-area: refe;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.fotos-grilla {
+    grid-area: foto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.lugar {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "pais contador"
+                         "pais2 contador2"
+                         "pais3 contador3"   ;
+    padding: 5px;
+}
+
+
+.lugar p { 
+    padding: 2px 5px;
+}
+
+
+.lu-1 {
+    grid-area: pais;
+    border-bottom: 1px solid grey;
+}
+
+.lu-2 {
+    grid-area: pais2;
+}
+
+.lu-3 {
+    grid-area: pais3;
+}
+
+.cont-1 {
+    grid-area: contador;
+    border-bottom: 1px solid grey;
+}
+.cont-3 {
+    grid-area: contador2;
+}
+.cont-3 {
+    grid-area: contador3;
+}
+.ver-fotos {
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17%, 1fr));
+    gap: 1rem;
+    margin: 10px;
+   
+}
+.ver-fotos article, img {
+    width: 100%;
+   
+    padding: 2px;
+   
+}
+
+.ver-fotos article, h3, h4, p {
+    display: flex;
+    align-items: flex-start;
+    font-size: 13px;
+    font-weight: 300;
+    flex-direction: column;
+
+}
+
+.ver-fotos article {
+    border: 1px solid gray;
+
+}
+
+.descarga {
+
+    display: flex;
+}
+
+.descarga i{
+
+    display: flex;
+}
+
+
+
+
+
