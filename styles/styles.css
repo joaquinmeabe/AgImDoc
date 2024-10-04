@@ -653,6 +653,9 @@ footer h3 {
       align-items: center;
     }
 
+    .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 
     .footer-sections {
       
