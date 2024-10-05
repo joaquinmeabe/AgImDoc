@@ -13,12 +13,21 @@
 .nav-Bus p {
     font-style: italic;
     color: black;
+    font-size: 25px;
 }
 
 
 .search-bar1 {
     display: flex;
 
+}
+
+.search-bar1 input {
+    font-size: 12px;
+    height: 25px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 4px 0px 0px 4px;
 }
 
 .hero-text1 {
@@ -35,17 +44,22 @@
     padding: 10px;
 }
 .search-bar1 button {
-    padding: 0.5rem;
+    padding: 0px !important;
     background-color: #000;
     color: #fff;
     border: none;
-    border-radius: 0px 6px 6px 0px;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: center;
+    width: 100px;
 }
 
 .search-bar1 input {
     width: 500px;
     padding: 10px;
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 4px 0px 0px 4px;
 }
 
 .panel {
@@ -113,7 +127,7 @@
 .ver-fotos {
    
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(17%, 1fr));
     gap: 1rem;
     margin: 10px;
    
@@ -124,7 +138,7 @@
 
 .ver-fotos article, h3, h4, p {
     display: flex;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
     flex-direction: column;
     justify-content: space-between;
@@ -134,6 +148,8 @@
 .ver-fotos article {
     border: 1px solid gray;
     padding: 10px;
+    box-shadow: 3px 3px 6px #01135b30;
+    background-color: #f2f2f2;
 }
 
 .descarga {
