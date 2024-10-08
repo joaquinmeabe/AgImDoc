@@ -317,7 +317,7 @@ h2 {
 
 
 .coverage-item, .video-item {
-   background-color: #f4f4f4;*/
+   background-color: #f4f4f4;
     padding: 1rem;
     text-align: center;
     border: 1px solid rgb(202, 202, 202);
@@ -770,10 +770,6 @@ footer h3 {
 }
 
 
-.marcag {
-  background-image: url(/fotos/favicon.png);
-  z-index: 500;
-}
 
 
 

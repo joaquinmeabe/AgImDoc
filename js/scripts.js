@@ -49,5 +49,29 @@ setInterval(changeImage, 300000); // 10 minutos en milisegundos.... ahora esta c
 
 //------------------------------------
 
+ // Seleccionamos el video y el botón de play
+ const video = document.getElementById('video1');
+ const playButton = document.getElementById('play-button1');
 
+ // Función para reproducir el video al hacer clic en la imagen
+ playButton.addEventListener('click', function() {
+     // Ocultamos el botón de play
+     playButton.style.display = 'none';
+     // Mostramos los controles del video
+     video.controls = true;
+     // Reproducimos el video
+     video.play();
+ });
+
+ // Opcional: cuando el video se pausa, podemos volver a mostrar el botón de play
+ video.addEventListener('pause', function() {
+     playButton.style.display = 'block';
+     video.controls = false;
+ });
+
+
+ //-----------------------------------
+
+
+ 
 

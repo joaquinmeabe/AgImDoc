@@ -158,11 +158,19 @@ video {
 }
 
 .ver-fotos article {
-    border: 1px solid gray;
+    border: 1px solid  #dddddd;
     padding: 10px;
     box-shadow: 3px 3px 6px #01135b30;
     background-color: #f2f2f2;
 }
+
+.ver-videos article {
+    border: 1px solid  #dddddd;
+    padding: 10px;
+    box-shadow: 3px 3px 6px #01135b30;
+    background-color: #f2f2f2;
+}
+
 
 .descarga {
 
@@ -190,6 +198,14 @@ video {
     .search-bar1 input {
         width: 370px;
     }
+    .ver-videos{
+   
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(24%, 1fr));
+        gap: 1rem;
+        margin: 10px;
+       
+    }
 
 
 
@@ -213,6 +229,16 @@ video {
     .ver-fotos {
         grid-template-columns: repeat(auto-fill, minmax(34%, 1fr));
     }
+
+    .ver-videos{
+   
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(34%, 1fr));
+        gap: 1rem;
+        margin: 10px;
+       
+    }
+
 .panel{
     display: block;
     padding: 30px 0px;
@@ -231,6 +257,15 @@ video {
 
     .ver-fotos {
         grid-template-columns: repeat(auto-fill, minmax(54%, 1fr));
+    }
+
+    .ver-videos{
+   
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(54%, 1fr));
+        gap: 1rem;
+        margin: 10px;
+       
     }
 
 }
