@@ -132,10 +132,22 @@
     margin: 10px;
    
 }
+
+.ver-videos{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+    gap: 1rem;
+    margin: 10px;
+   
+}
 .ver-fotos article, img {
     width: 100%;
 }
 
+video {
+    width: 100%;
+}
 .ver-fotos article, h3, h4, p {
     display: flex;
     font-size: 12px;
