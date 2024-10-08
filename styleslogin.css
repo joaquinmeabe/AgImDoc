@@ -1,0 +1,140 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('fotos/Incendios_San_Luis_ituzaingo_corrientes_38.jpg') no-repeat center center/cover;
+}
+
+body, button, input, select, textarea, .ast-button, .ast-custom-button, label, a, p {
+    font-family: Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.login-container {
+    
+    background-color: rgb(248 248 248 / 70%);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #335684;
+    color: #4e4c4c;
+    box-shadow: 2px 2px 12px #335684;
+}
+
+/* Estilo del logo */
+.logo-login h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.logo-login img {
+    
+    width: 50%;
+    margin-bottom: 23px;
+}
+
+/* Estilo de los campos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #335684;
+    margin-bottom: 5px;
+    box-shadow: 0.5px 0.5px 3px #335684;
+}
+
+/* Botón de inicio de sesión */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #335684; /* Color ID */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.login-btn:hover {
+    background-color: #2f6ab7;
+}
+
+/* Opciones de ayuda */
+.help-options {
+    font-size: 14px;
+    
+}
+
+.help-options a {
+    color:#335684;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.help-options a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón de Google */
+.login-google {
+    margin-top: 15px;
+}
+
+.google-btn {
+   
+    background-color: #f6f6f6;
+    color: #4e4c4c;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    border: 1px solid #335684;
+    box-shadow: 0.5px 0.5px 3px #335684;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.google-btn:hover {
+    background-color: #2465bb95;
+    color: white;
+}
