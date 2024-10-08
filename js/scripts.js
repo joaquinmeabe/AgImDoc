@@ -19,6 +19,9 @@ menuIcon.addEventListener('click', function () {
 });
 
 
+
+
+
 let currentIndex = 0;
 const images = document.querySelectorAll('.carousel img');
 const totalImages = images.length;
@@ -40,6 +43,11 @@ function changeImage() {
 
 // Cambiar la imagen cada 10 minutos
 setInterval(changeImage, 300000); // 10 minutos en milisegundos.... ahora esta cada5 minutos
+
+
+
+
+//------------------------------------
 
 
 

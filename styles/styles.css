@@ -84,11 +84,11 @@ nav {
     font-size: 14px;
   }
 
- /* Estilo base para el ul de la navegación
+ Estilo base para el ul de la navegación
 .nav-list {
     
     display: none;
-  } */
+  } 
 
   /* Mostrar la lista de navegación cuando tiene la clase 'show-nav' */
 .nav-list.show-nav {
@@ -223,7 +223,7 @@ nav {
   object-fit: cover;
   opacity: 0;
   position: absolute;
-  /*transition: opacity 1s ease-in-out;*/
+  transition: opacity 1s ease-in-out; 
 }
 
 .carousel img.active {
@@ -313,17 +313,12 @@ h2 {
     text-align: justify;
   }
 
-  .coverages p {
-
-    display: flex;
-    width: 80%;
-
-  }
+ 
 
 
 .coverage-item, .video-item {
-    /*background-color: #f4f4f4;*/
-    /*padding: 1rem;*/
+   background-color: #f4f4f4;*/
+    padding: 1rem;
     text-align: center;
     border: 1px solid rgb(202, 202, 202);
     border-radius: 4px;
@@ -798,7 +793,7 @@ footer h3 {
 @media (max-width: 550px) {
     
     .hero-text {
-        width: 100%;
+        width: 50%;
         bottom: 5%;
         padding: 0.5rem;
         font-size: 13px;
@@ -822,7 +817,7 @@ footer h3 {
     }
 
     .termCond {
-      padding: 0px;
+      padding: 30px;
     }
 
 }
