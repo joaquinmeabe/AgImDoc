@@ -635,8 +635,45 @@ footer h3 {
   padding: 0px;
 }
 
+.descFr {
+ 
+ display: flex;
+ flex-direction: column;
+}
 
+.descFr h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
 
+.descFr .grid-item {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  background-color: #335684;
+  padding: 20px;
+  color: white;
+  border-radius: 6px;
+
+}
+
+.fr {
+  
+  margin: 1rem 0rem;
+  font-weight: 400;
+  color: #ffffff;
+  border: none;
+  font-stretch: extra-condensed;
+  background-color: #335684;
+  padding: 0rem 1rem;
+}
+.marcAgua {
+    background-image: url(/fotos/logo\ Agencia-02-02.png);
+    z-index: 500;
+    position: fixed;
+}
 
 /* Estilos para pantallas más pequeñas */
 
@@ -674,7 +711,11 @@ footer h3 {
       top: 2%; /* Para que aparezca justo debajo del elemento principal */
       left: 70px;
   }
+  .hero-text{
 
+    width: 80%;
+  }
+  
   .rever {
     display: flex !important;
     flex-direction: row-reverse;
@@ -789,7 +830,7 @@ footer h3 {
 @media (max-width: 550px) {
     
     .hero-text {
-        width: 50%;
+        width: 70%;
         bottom: 5%;
         padding: 0.5rem;
         font-size: 13px;
