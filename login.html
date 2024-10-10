@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <section class="carousel">
+    <img id="random-image" src="" alt="Imagen aleatoria">
     <div class="login-container">
         <!-- Logo -->
         <div class="logo-login">
@@ -47,6 +49,42 @@
             </div>
         </form>
     </div>
+</section>
+
+    <!-- Inicio JS -->
+    <script>
+        // Array con las rutas de las imágenes
+        const images = [
+            './fotosAltaCarrusel/0_a_carousel_portadas.jpg',
+            './fotosAltaCarrusel/0_a_carousel_portadas_1.jpg',
+            './fotosAltaCarrusel/0_a_carousel_portadas_2.jpg',
+            './fotosAltaCarrusel/0_a_carousel_portadas_3.jpg',
+            './fotosAltaCarrusel/0_a_carousel_portadas_4.jpg',
+            './fotosAltaCarrusel/0_a_carousel_portadas_5.jpg',
+            './fotosAltaCarrusel/0_a_carousel_portadas_6.jpg',
+            './fotosAltaCarrusel/0_a_carousel_portadas_7.jpg',
+
+        ];
+
+        // Seleccionamos la imagen del DOM
+        const randomImageElement = document.getElementById('random-image');
+
+        // Función para mostrar una imagen aleatoria
+        function showRandomImage() {
+            // Seleccionamos una imagen al azar
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const randomImage = images[randomIndex];
+
+            // Cambiamos el src de la imagen
+            randomImageElement.src = randomImage;
+        }
+
+        // Llamamos a la función cuando cargue la página
+        window.onload = showRandomImage;
+
+
+    </script>
+
 </body>
 </html>
 

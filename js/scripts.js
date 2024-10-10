@@ -19,59 +19,36 @@ menuIcon.addEventListener('click', function () {
 });
 
 
+ // Array con las rutas de las imágenes
+ const images = [
+    './fotosAltaCarrusel/0_a_carousel_portadas.jpg',
+    './fotosAltaCarrusel/0_a_carousel_portadas_1.jpg',
+    './fotosAltaCarrusel/0_a_carousel_portadas_2.jpg',
+    './fotosAltaCarrusel/0_a_carousel_portadas_3.jpg',
+    './fotosAltaCarrusel/0_a_carousel_portadas_4.jpg',
+    './fotosAltaCarrusel/0_a_carousel_portadas_5.jpg',
+    './fotosAltaCarrusel/0_a_carousel_portadas_6.jpg',
+    './fotosAltaCarrusel/0_a_carousel_portadas_7.jpg',
 
+];
 
+// Seleccionamos la imagen del DOM
+const randomImageElement = document.getElementById('random-image');
 
-let currentIndex = 0;
-const images = document.querySelectorAll('.carousel img');
-const totalImages = images.length;
+// Función para mostrar una imagen aleatoria
+function showRandomImage() {
+    // Seleccionamos una imagen al azar
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const randomImage = images[randomIndex];
 
-// Inicialmente mostrar la primera imagen
-images[currentIndex].classList.add('active');
-
-// Función para cambiar la imagen cada 10 minutos (600,000 ms)
-function changeImage() {
-    // Quitar la clase 'active' de la imagen actual
-    images[currentIndex].classList.remove('active');
-    
-    // Incrementar el índice
-    currentIndex = (currentIndex + 1) % totalImages;
-    
-    // Agregar la clase 'active' a la siguiente imagen
-    images[currentIndex].classList.add('active');
+    // Cambiamos el src de la imagen
+    randomImageElement.src = randomImage;
 }
 
-// Cambiar la imagen cada 10 minutos
-setInterval(changeImage, 300000); // 10 minutos en milisegundos.... ahora esta cada5 minutos
-
-
-
-
-//------------------------------------
-
- // Seleccionamos el video y el botón de play
- const video = document.getElementById('video1');
- const playButton = document.getElementById('play-button1');
-
- // Función para reproducir el video al hacer clic en la imagen
- playButton.addEventListener('click', function() {
-     // Ocultamos el botón de play
-     playButton.style.display = 'none';
-     // Mostramos los controles del video
-     video.controls = true;
-     // Reproducimos el video
-     video.play();
- });
-
- // Opcional: cuando el video se pausa, podemos volver a mostrar el botón de play
- video.addEventListener('pause', function() {
-     playButton.style.display = 'block';
-     video.controls = false;
- });
+// Llamamos a la función cuando cargue la página
+window.onload = showRandomImage;
 
 
  //-----------------------------------
 
-
- 
 
