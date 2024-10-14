@@ -52,3 +52,34 @@ window.onload = showRandomImage;
  //-----------------------------------
 
 
+ // Seleccionar elementos
+const header = document.getElementById('main-header');
+const heroSearchBar = document.getElementById('hero-search-bar');
+const headerSearchBar = document.createElement('div');
+
+// Configurar la barra de búsqueda en el header
+headerSearchBar.classList.add('search-bar');
+headerSearchBar.id = 'fixed-search-bar';
+headerSearchBar.innerHTML = heroSearchBar.innerHTML;
+
+// Evento de scroll
+window.onscroll = function() {
+    const heroPosition = heroSearchBar.getBoundingClientRect().top;
+
+    if (heroPosition <= 0) {
+        // Mover la barra de búsqueda al header cuando hacemos scroll hacia abajo
+        if (!document.getElementById('fixed-search-bar')) {
+            header.appendChild(headerSearchBar);
+            heroSearchBar.classList.add('hide-search-bar');
+        }
+    } else {
+        // Volver la barra de búsqueda al hero cuando volvemos arriba
+        if (document.getElementById('fixed-search-bar')) {
+            header.removeChild(headerSearchBar);
+            heroSearchBar.classList.remove('hide-search-bar');
+        }
+    }
+};
+
+
+

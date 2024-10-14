@@ -1,7 +1,30 @@
-// Añadir funcionalidad para abrir ventanas flotantes con más información
-document.querySelectorAll('.image-item').forEach(item => {
-    item.addEventListener('click', () => {
-        // Aquí puedes programar la ventana flotante con más detalles de la imagen
-        alert('Mostrando más detalles de la imagen...');
+const form = document.getElementById('subscribeForm');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Valida el formulario
+    const inputs = form.querySelectorAll('input, select');
+    let allValid = true;
+
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            allValid = false;
+        }
     });
+
+    if (allValid) {
+        // Si todo está correcto, muestra el mensaje flotante
+        successMessage.classList.remove('hidden');
+
+        // Ocultar el mensaje después de unos segundos
+        setTimeout(() => {
+            successMessage.classList.add('hidden');
+        }, 5000);
+
+        // Aquí podrías agregar la lógica para enviar los datos al servidor
+
+        form.reset(); // Resetea el formulario
+    }
 });

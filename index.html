@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" href="fotos/favicon-02-02.png" type="image/png"/>
+    <link rel="icon" href="fotos/icono agencia IDC-01-01.png" type="image/png"/>
 
 </head>
 <body>
-    <header>
+    <header> <!-- id="main-header" para colocar el searchbar en la cabecera al hacer scroll-->
         <div class="logo">
            <a href="index.html"><img src="fotos/logo Agencia-02-02.png" alt="Agencia Imagen Documental Logo"></a>
         </div>
@@ -20,39 +20,49 @@
                 <div class="menu-icon" id="menu-icon">
                     <i class="fa-solid fa-bars" id="icon"></i>
                 </div>
+                <div>
                 <ul class="nav-list" id="nav-list">
-                    <li><a href="#">Fotos<i class="fas fa-chevron-down"></i></a>
+                    <li><a href="#">Fotos<i class="fa-solid fa-sort-down"></i></a>
                         <ul class="dropdown">
                             <li><a href="search.html">Foto Editorial</a></li>
                             <li><a href="fotoRep.html">Foto Reportajes</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Videos<i class="fas fa-chevron-down"></i></a>
+                    <li><a href="#">Videos<i class="fa-solid fa-sort-down"></i></a>
                         <ul class="dropdown">
                             <li><a href="videos.html">Editoriales</a></li>
-                            <li><a href="videos.html">Reportajes</a></li>
+                            <li><a href="videos.html">Genereales</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Cuenta<i class="fas fa-chevron-down"></i></a>
+                    <li><a href="#">Cuenta<i class="fa-solid fa-sort-down"></i></a>
                         <ul class="dropdown">
                             <li><a href="login.html">Acceder</a></li>
                             <li><a href="suscripcion.html">Registrarse</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Servicios<i class="fas fa-chevron-down"></i></a>
+                    <li><a href="#">Productos<i class="fa-solid fa-sort-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="termCon.html">Termino y Condiciones</a></li>
-                            <li><a href="#">Servicios Empresariales</a></li>
-                            <li><a href="#">Servicios Fotográficos</a></li>
-                            <li><a href="#">Servicios Documentales</a></li>
+                            <li><a href="#">Fotografía editorial</a></li>
+                            <li><a href="#">Foto reportaje</a></li>
+                            <li><a href="#">Video editorial</a></li>
+                            <li><a href="#">Videos generales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Servicios<i class="fa-solid fa-sort-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Suscripción</a></li>
+                            <li><a href="#">Producciones</a></li>
+                            <li><a href="#">Coberturas</a></li>
+                            <li><a href="#">Empresariales</a></li>
                         </ul>
                     </li>
                 </ul>
+            </div>
             </nav>
         
             <div class="subscribe">
                <a href="login.html"><button class="ver">Acceder</button></a>
-                <a href="suscripcion.html"><button class="ver">Suscribirse</button></a>
+                <a href="suscripcion.html"><button class="ver">Registrarse</button></a>
                 <li class="noVer">
                     <a href="login.html"><span class="material-symbols-outlined">person</span> <span
                             class="text">Acceder</span></a></li>
@@ -66,12 +76,12 @@
         <div class="carousel">
             <img id="random-image" src="" alt="Imagen aleatoria">
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar Incendios Corrientes">
-            <button>Buscar</button>
+        <div class="search-bar" id="hero-search-bar">
+            <input type="text" id="search-input" placeholder="Buscar Incendios Corrientes">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="hero-text">
-            <p>Plataforma de acceso y descarga de los contenidos de la Agencia Imagen Documental.</p>
+            <p>Plataforma de acceso y descarga de los contenidos de la Agencia Imagen Documental</p>
         </div>
     </section>
 
@@ -201,27 +211,36 @@
             </div>
         </section>
     </main>
-
-    <div class="footer-sections">
-        <div class="logo">
-          <img src="fotos/logo Agencia-02-02.png" alt="Agencia Imagen Documental Logo">
+    <footer>
+        <div class="footer-sections">
+            <div class="logo">
+                <a href="index.html"><img src="fotos/logo Agencia-02-02.png" alt="Agencia Imagen Documental Logo"></a>
+            </div>
+            <div class="paddFoot">
+                <h3>Contacto</h3>
+                <p>agencia@imagendocumental.com</p>
+            </div>
+            <div class="paddFoot">
+                <h3>Nosotros</h3>
+                <a href=""><p>Conócenos</p></a>
+            </div>
+            <div class="redes">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-regular fa-face-smile-beam"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
-        <div class="paddFoot">
-          <h3>Contacto</h3>
-          <p>agencia@imagendocumental.com</p>
+        <div class="tyc">
+            <a href=""><p>Aviso legal</p></a>
+            <a href="termCon.html"><p>Términos de uso</p></a>
+            <a href=""><p>Política de privacidad</p></a>
+            <a href=""><p>Tipo de licencias</p></a>
+            <a href=""><p>Política de cookies</p></a>
         </div>
-        <div class="paddFoot">
-          <h3>Nosotros</h3>
-          <p>Conócenos</p>
+        <div class="copyright">
+            <p>© 2024 Agencia Imagen Documental. Todos los derechos reservados.</p>
         </div>
-        <div class="paddFoot">
-          <h3>Productos</h3>
-          <p>Catálogo</p>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>© 2024 Agencia Imagen Documental. Todos los derechos reservados.</p>
-      </div>
     </footer>
 
     <!-- Inicio JS -->
