@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia Imagen Documental</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/stylesModalCarrito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -93,16 +94,18 @@
                 </div>
             </div>
             <div class="descFr">
-                
-                <a href="login.html">
-                    
-                    <div class="descarga grid-item" data-title="Título 2" data-info="Información 2">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h3>Descargar Foto Reportaje completo</h3>
-                    <i class="fa-solid fa-download"></i>
+                <div class="descarga grid-item" data-title="Título 2" data-info="Información 2">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fa-solid fa-cart-shopping"></i><!-- Usando Font Awesome para el ícono -->
+                    </div>
+                    <a href="login.html">
+                        <div class="descFr2">
+                            <h3>Descargar Foto Reportaje completo</h3>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            </div>            
+            </div>
         </section>
         <section class="idc">
             <a href="https://imagendocumental.com">
@@ -168,9 +171,72 @@
     </div>
     </footer>
 
+
+    <!-- Modal de aviso con galería -->
+<div class="modal" id="cartModal">
+    <div class="modal-content">
+        <div class="content-int">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="carrCont">
+            <p>¡El Foto Reportaje ha sido agregado!</p>
+            <div class="carrCont1">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </div>
+        </div>    
+        <!-- Galería de imágenes -->
+        <div class="gallery">
+           
+
+            <div class="gallery-content"> 
+                <img src="fotos/marcha-manifestacion-desaparion-ni+¦o-Loan Pe+¦a-3 meses-reclamo_4.jpg"
+                    alt="Cobertura 1" class="gallery-img" id="galleryImg">
+                <p class="gallery-text" id="galleryText">Ayer por la noche, un grupo de personas marchó en la ciudad...
+                </p> 
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-left" id="prev"></i> <!-- Flecha anterior -->
+                    <i class="fa-solid fa-chevron-right" id="next"></i> <!-- Flecha siguiente -->
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+         <!-- Datos y opciones de compra-->
+        <div class="datos-box">
+        <div class="modal-info">
+            <h3 id="modal-title">Titutlo: Manifestación por la desaparición de Loan Peña. Corrientes, Capital.</h3>
+            <p id="modal-desc">Dimensiones: 800px x 600px | Tamaño: 312Kb</p>
+            <p><span id="modal-author">Autor ©María Daniela Varela</span></p>
+            <p><span id="modal-rights">Producto: Foto reportaje. Nº fotos: 3</span></p>
+        </div>
+        <div class="modal-purchase">
+            <h4>Opciones</h4>
+            <button>Web $ 00.000</button>
+            <button>Original $00.000</button>
+            <button class="sus"><a href="suscripcion.html">Comprar</button></a>
+            <button class="sus"><a href="login.html">Acceder</button></a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+    <!-- Modal de aviso carrito
+  <div class="modal" id="cartModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <p>¡El foto reportaje ha sido agregado al carrito!</p>
+      <p>Total de imágenes en el carrito: <span id="cartCount">0</span></p>
+    </div>
+  </div>-->
+
     <!-- Inicio JS -->
 
     <script src="js/scripts.js"></script>
+
+
+    <script src="js/scriptFr.js"></script>
 </body>
 
 </html>

@@ -663,13 +663,26 @@ footer h3 {
 .descFr {
  
  display: flex;
- flex-direction: column;
+ justify-content: center;
+}
+
+
+.descFr a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.descFr2 {
+  display: flex;
+  align-items: flex-end;
 }
 
 .descFr h3 {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+  margin: 0px 90px 0px 45px;
+  line-height: 1.6;
 }
 
 .descFr .grid-item {
@@ -682,6 +695,7 @@ footer h3 {
   color: white;
   border-radius: 6px;
   line-height: 1;
+  align-items: flex-end;
 }
 
 .fr {
