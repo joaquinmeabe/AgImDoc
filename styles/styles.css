@@ -757,6 +757,11 @@ footer h3 {
   .hero {
     top: 66px;
   }
+
+  .search-bar input {
+
+    width: 50vw;
+  }
   
   .rever {
     display: flex !important;
