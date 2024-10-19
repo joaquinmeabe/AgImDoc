@@ -69,28 +69,33 @@
     <main>
 
         <section class="coverages">
-                <h2 class="fr">Manifestación por la desaparición de Loan Peña - Corrientes, Capital - 3 Fotos.</h2>
+                <h2 class="fr">Emotiva noche con la orquesta sinfónica de la provincia. - Corrientes Capital - 5 Fotos.</h2>
                         <div class="grid-container">
                 <div class="coverage-item">
-                    <img src="fotos/marcha-manifestacion-desaparion-ni+¦o-Loan Pe+¦a-3 meses-reclamo_4.jpg"
+                    <img src="fotos/El talento local se puso de manifiesto.jpg"
                         alt="Cobertura 1">
-                    <p>Ayer por la noche, un grupo de personas marchó en la ciudad hasta la casa de Gobierno para exigir
-                        justicia y recordar los tres meses de la desaparición de Loan. Aunque la atención mediática y
-                        los reclamos han disminuido, hay quienes siguen luchando por conocer la verdad y que el caso no
-                        quede en el olvido.</p>
+                    <p>La ciudad de Corrientes se vistió de gala el pasado viernes 6 de septiembre para recibir un concierto inolvidable, donde la maestría y pasión envolvió al público en una atmósfera de profunda emoción y reflexión.</p>
                 </div>
                 <div class="coverage-item">
-                    <img src="fotos/marcha_loan_2.jpg" alt="Cobertura 2">
-                    <p>En las últimas horas, la jueza Cristina Pozzer Penzo ordenó la detención del psicólogo forense
-                        Federico Rossi Colombo por falso testimonio, complicando aún más el caso.</p>
+                    <img src="fotos/El talento local se puso de manifiesto_2.jpg" alt="Cobertura 2">
+                    <p>La orquesta sinfónica de la provincia, dirigida por la maestra Andrea Fusco, brindó un concierto memorable en la iglesia San Francisco Solano, en el marco de los 800 años de los estigmas de San Francisco de Asís.</p>
                 </div>
                 <div class="coverage-item">
-                    <img src="fotos/marcha-manifestacion-desaparion-ni+¦o-Loan Pe+¦a-3 meses-reclamo_5.jpg"
+                    <img src="fotos/El talento local se puso de manifiesto_3.jpg"
                         alt="Cobertura 3">
-                    <p>A pesar de diversas hipótesis y la detención de siete personas, entre ellos familiares y
-                        exfuncionarios, no se ha logrado dar con el paradero del menor. La investigación ha estado
-                        marcada por cambios de versiones y polémicas familiares, pero las pistas obtenidas no han
-                        permitido esclarecer lo sucedido.</p>
+                    <p>El reconocido compositor correntino Kiki Troia presentó su obra "Eleva tu voz", interpretada por niños de quinto grado del colegio salesiano. La inocencia y el talento de los pequeños músicos añadieron un toque de ternura y esperanza a la velada, demostrando que la música es un lenguaje universal que trasciende las edades.</p>
+                </div>
+                <div class="coverage-item">
+                    <img src="fotos/El talento local se puso de manifiesto_4.jpg"
+                        alt="Cobertura 3">
+                    <p>
+                        Con la dirección de la maestra Andrea Fusco, brindaron un concierto memorable en la iglesia San Francisco Solano, demostrando la importancia de la música como unificador de la comunidad.</p>
+                </div>
+                <div class="coverage-item">
+                    <img src="fotos/El talento local se puso de manifiesto_5.jpg"
+                        alt="Cobertura 3">
+                    <p>
+                        La presentación del viernes fue mucho más que un simple concierto. Fue una celebración de la música, del talento local y de la capacidad de la cultura para conmover y unir a las personas.</p>
                 </div>
             </div>
             <div class="descFr" id="sector-carrito">
@@ -189,7 +194,7 @@
            
 
             <div class="gallery-content"> 
-                <img src="fotos/marcha-manifestacion-desaparion-ni+¦o-Loan Pe+¦a-3 meses-reclamo_4.jpg"
+                <img src="fotos/El talento local se puso de manifiesto.jpg"
                     alt="Cobertura 1" class="gallery-img" id="galleryImg">
                 <p class="gallery-text" id="galleryText">Ayer por la noche, un grupo de personas marchó en la ciudad...
                 </p> 
@@ -205,7 +210,7 @@
          <!-- Datos y opciones de compra-->
         <div class="datos-box">
         <div class="modal-info">
-            <h3 id="modal-title">Titutlo: Manifestación por la desaparición de Loan Peña. Corrientes, Capital.</h3>
+            <h3 id="modal-title">Emotiva noche con la orquesta sinfónica de la provincia.</h3>
             <p id="modal-desc">Dimensiones: 800px x 600px | Tamaño: 312Kb</p>
             <p><span id="modal-author">Autor ©María Daniela Varela</span></p>
             <p><span id="modal-rights">Producto: Foto reportaje. Nº fotos: 3</span></p>
@@ -236,7 +241,86 @@
     <script src="js/scripts.js"></script>
 
 
-    <script src="js/scriptFr.js"></script>
+    <script>
+        // Inicializamos el contador del carrito
+        let cartCount = 0;
+        
+        // Referencias a los elementos del DOM
+        const cartIcon = document.getElementById('cartIcon');
+        const cartModal = document.getElementById('cartModal');
+        const cartCountElement = document.getElementById('cartCount');
+        const closeModal = document.getElementById('closeModal');
+        
+        // Galería
+        const galleryImg = document.getElementById('galleryImg');
+        const galleryText = document.getElementById('galleryText');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+        
+        // Arreglo con las imágenes y descripciones
+        const galleryItems = [
+          {
+            src: 'fotos/El talento local se puso de manifiesto_2.jpg',
+            text: 'La orquesta sinfónica de la provincia, dirigida por la maestra Andrea Fusco...'
+          },
+          {
+            src: 'fotos/El talento local se puso de manifiesto_3.jpg',
+            text: 'El reconocido compositor correntino Kiki Troia presentó su obra "Eleva tu voz"...'
+          },
+          {
+            src: 'fotos/El talento local se puso de manifiesto_4.jpg',
+            text: 'Con la dirección de la maestra Andrea Fusco, brindaron un concierto memorable en...'
+          },
+          {
+            src: 'fotos/El talento local se puso de manifiesto_5.jpg',
+            text: 'La presentación del viernes fue mucho más que un simple concierto...'
+          }
+        ];
+        
+        let currentIndex = 0;
+        
+        // Función para actualizar la imagen y texto en la galería
+        function updateGallery(index) {
+          galleryImg.src = galleryItems[index].src;
+          galleryText.textContent = galleryItems[index].text;
+        }
+        
+        // Evento para el icono del carrito
+        cartIcon.addEventListener('click', () => {
+          // Incrementamos el contador del carrito
+          cartCount++;
+          
+          // Actualizamos el contenido del modal con el nuevo total
+          cartCountElement.textContent = cartCount;
+          
+          // Mostramos el modal
+          cartModal.style.display = 'block';
+        });
+        
+        // Evento para cerrar el modal cuando se haga clic en la "x"
+        closeModal.addEventListener('click', () => {
+          cartModal.style.display = 'none';
+        });
+        
+        // Opción para cerrar el modal si el usuario hace clic fuera del modal
+        window.addEventListener('click', (event) => {
+          if (event.target === cartModal) {
+            cartModal.style.display = 'none';
+          }
+        });
+        
+        // Eventos de navegación en la galería
+        nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % galleryItems.length;
+          updateGallery(currentIndex);
+        });
+        
+        prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+          updateGallery(currentIndex);
+        });
+        
+    </script>
 </body>
 
 </html>

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body, button, input, select, textarea, .ast-button, .ast-custom-button {
         font-family: Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
@@ -21,6 +24,9 @@ a:hover {
   color: #000000;
 }
 
+abbr {
+  text-decoration: none;
+}
 
 header {
     display: flex;
@@ -335,6 +341,25 @@ h2 {
 
 .coverage-item p {
   padding: 2rem;
+}
+
+.masData {
+  font-size: 12px;
+  display: flex;
+  color: #262d72;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    padding: 10px;
+  }
+  a {
+    color: #262d72;
+  }
+}
+.dateData {
+  display: flex;
+  align-items: center;
 }
 
 .video-item p {
@@ -660,6 +685,11 @@ footer h3 {
   padding: 0px;
 }
 
+#sector-carrito {
+  scroll-margin-top: 250px; /* Ajuste de valor según la altura de navbar fixed */
+}
+
+
 .descFr {
  
  display: flex;
@@ -674,7 +704,7 @@ footer h3 {
 
 .descFr2 {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .descFr h3 {
@@ -695,7 +725,7 @@ footer h3 {
   color: white;
   border-radius: 6px;
   line-height: 1;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .fr {
