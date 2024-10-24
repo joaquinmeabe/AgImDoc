@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body, button, input, select, textarea, .ast-button, .ast-custom-button {
+body, button, input, select, textarea, .ast-button, .ast-custom-button, p, a {
         font-family: Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -191,10 +191,11 @@ nav {
 .subscribe {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .subscribe span {
-    margin-right: 1rem;
+    margin-right: 0rem;
 }
 
 .subscribe button { 
@@ -211,6 +212,84 @@ nav {
     font-weight: 300;
 }
 
+/* desplegable usuarios + estilos carrito en nav header */
+
+.cart-cuenta {
+    align-items: center;
+    left: 20px;
+    bottom: 10px;
+    position: relative;
+    font-size: 9px;
+    border-radius: 10px;
+    padding: 1px 6px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    display: inline-block;
+}
+
+.cart-icono {
+    color: black;
+    padding-right: 15px;
+    font-size: 16px;
+    position: relative;
+    left: 49px;
+}
+
+/* Estilos para el icono del usuario */
+.user-menu {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 9px;
+}
+
+.user-menu span {
+  font-size: 24px;
+  color: black;
+}
+
+/* Estilos para el dropdown (menú desplegable) */
+.user-menu .dropdown1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -25PX;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 120px;
+  z-index: 10;
+  padding: 0px 10px;
+  text-align: start;
+}
+
+.user-menu .dropdown1 li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.dropdown1 li:hover {
+  border-right: 4px solid #335684;
+  padding-right: 0px;
+}
+
+.user-menu .dropdown1 li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown1 li a:hover {
+
+  color: #555555;
+}
+
+/* Mostrar el menú desplegable cuando se hace hover en el icono de persona */
+.user-menu:hover .dropdown1 {
+  display: block;
+}
+
 
 .hero {
     width: 100%;
@@ -218,7 +297,7 @@ nav {
     position: relative;
     text-align: center;
     color: #fff;
-    top: 76px;
+    top: 50px;
     
 }
 

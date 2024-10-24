@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <header>
+    <header> <!-- id="main-header" para colocar el searchbar en la cabecera al hacer scroll-->
         <div class="logo">
             <a href="index.html"><img src="fotos/logo Agencia-02-02.png" alt="Agencia Imagen Documental Logo"></a>
         </div>
@@ -21,44 +21,50 @@
                 <div class="menu-icon" id="menu-icon">
                     <i class="fa-solid fa-bars" id="icon"></i>
                 </div>
-                <ul class="nav-list" id="nav-list">
-                    <li><a href="#">Fotos<i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="search.html">Foto Editorial</a></li>
-                            <li><a href="fotoRep.html">Foto Reportajes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Videos<i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="videos.html">Editoriales</a></li>
-                            <li><a href="videos.html">Reportajes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Cuenta<i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="login.html">Acceder</a></li>
-                            <li><a href="suscripcion.html">Registrarse</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Servicios<i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="termCon.html">Termino y Condiciones</a></li>
-                            <li><a href="#">Servicios Empresariales</a></li>
-                            <li><a href="#">Servicios Fotográficos</a></li>
-                            <li><a href="#">Servicios Documentales</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div>
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="#">Fotos<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="search.html">Foto Editorial</a></li>
+                                <li><a href="fotoRep.html">Foto Reportajes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Videos<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="videos.html">Editoriales</a></li>
+                                <li><a href="videos.html">Crudo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Productos<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Fotografía editorial</a></li>
+                                <li><a href="#">Foto reportaje</a></li>
+                                <li><a href="#">Video editorial</a></li>
+                                <li><a href="#">Videos generales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Servicios<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Suscripción</a></li>
+                                <li><a href="#">Producciones</a></li>
+                                <li><a href="#">Coberturas</a></li>
+                                <li><a href="#">Empresariales</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        
+
             <div class="subscribe">
-               <a href="login.html"><button class="ver">Acceder</button></a>
-                <a href="suscripcion.html"><button class="ver">Suscribirse</button></a>
-                <li class="noVer">
-                    <a href="login.html"><span class="material-symbols-outlined">person</span> <span
-                            class="text">Acceder</span></a></li>
-                <li class="noVer"><a href="suscripcion.html"><span class="material-symbols-outlined">person_add</span> <span
-                            class="text">Suscribirse</span></a></li>
+                <i class="fa-solid fa-cart-shopping cart-icono"></i>
+                <p class="cart-cuenta">5</p>
+                <div class="user-menu">
+                    <span class="material-symbols-outlined">person</span>
+                    <ul class="dropdown1">
+                        <li><a href="login.html">Acceder</a></li>
+                        <li><a href="suscripcion.html">Crear cuenta</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
