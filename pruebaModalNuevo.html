@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Imagen Documental</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="stylesSearch.css">
+    <link rel="icon" href="fotos/icono agencia IDC-01-01.png" type="image/png"/>
+    <style>
+        /* Modal base */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+}
+
+.modal img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.modal-info p {
+    margin: 5px 0;
+}
+
+.modal-purchase {
+    margin-top: 20px;
+}
+
+.modal-purchase button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.modal-purchase button:hover {
+    background-color: #218838;
+}
+
+#price-info {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+}
+
+    </style>
+
+</head>
+<body>
+    <header> <!-- id="main-header" para colocar el searchbar en la cabecera al hacer scroll-->
+        <div class="logo">
+            <a href="index.html"><img src="fotos/logo Agencia-02-02.png" alt="Agencia Imagen Documental Logo"></a>
+        </div>
+        <div class="rever">
+            <nav>
+                <div class="menu-icon" id="menu-icon">
+                    <i class="fa-solid fa-bars" id="icon"></i>
+                </div>
+                <div>
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="#">Fotos<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="search.html">Foto Editorial</a></li>
+                                <li><a href="fotoRep.html">Foto Reportajes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Videos<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="videos.html">Editoriales</a></li>
+                                <li><a href="videos.html">Crudo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Productos<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Fotografía editorial</a></li>
+                                <li><a href="#">Foto reportaje</a></li>
+                                <li><a href="#">Video editorial</a></li>
+                                <li><a href="#">Videos generales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Servicios<i class="fa-solid fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Suscripción</a></li>
+                                <li><a href="#">Producciones</a></li>
+                                <li><a href="#">Coberturas</a></li>
+                                <li><a href="#">Empresariales</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="subscribe">
+                <i class="fa-solid fa-cart-shopping cart-icono"></i>
+                <p class="cart-cuenta">5</p>
+                <div class="user-menu">
+                    <span class="material-symbols-outlined">person</span>
+                    <ul class="dropdown1">
+                        <li><a href="login.html">Acceder</a></li>
+                        <li><a href="suscripcion.html">Crear cuenta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="nav-Bus" >
+            <p>"Palabras claves encontradas"</p>        
+            <div class="search-bar1">
+                <input type="text" placeholder="Buscar Incendios Corrientes">
+                <button>Buscar</button>
+            </div>
+        </div>
+        <p class="centro">Centro de descarga fotos</p>        
+    </section>
+
+
+    <main>
+        <section class="panel">
+            <div class="refe">
+                <section class="secciones-refe">
+                    <div class="lugar">
+                        <p class="lu-1"> Ubicación</p>
+                        <p class="lu-2"> Pais</p>
+                        <p class="lu-3"> Ciudad</p>
+                        <p class="cont-1"> fotos</p>
+                        <p class="cont-2"> 45</p>
+                        <p class="cont-3"> 45</p>
+                    </div>
+
+
+                </section>
+            </div>
+            <div class="fotos-grilla">
+                <section class="ver-fotos">
+                  <article>
+                    <div class="grid-item" data-title="Título 2" data-info="Información 2">
+                        <img src="fotos/20.02.22 consecuencia Incendios Santo Tome 28.jpg" alt="">
+                    </div>
+                    <p>Incendios forestales en Corrientes</p>
+                    <p>Corrientes</p>
+                        <p>20/12/2023</p>
+                    <div class="descarga grid-item" data-title="Título 2" data-info="Información 2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                  </article>
+                  
+                 
+                </section>    
+
+            </div>
+    
+        </section>
+    
+    
+    </main>
+
+    <!-- Modal Flotante -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <img id="modal-image" src="https://raw.githubusercontent.com/joaquinmeabe/AgImDoc/refs/heads/main/fotos/20.02.22%20consecuencia%20Incendios%20Santo%20Tome%2028.jpg" alt="">
+        <span class="close">&times;</span>
+        <div class="conten-info">
+            <div class="modal-info">
+                <h3 id="modal-title">Título de la imagen</h3>
+                <p id="modal-desc">Descripción y detalles de la imagen</p>
+                <p>Autor: <span id="modal-author">© María Daniela Varela</span></p>
+                <p>Fecha: <span id="modal-date">20/12/2023</span></p>
+                <p>Lugar: <span id="modal-location">Corrientes</span></p>
+                <p>Palabras clave: <span id="modal-keywords">Incendios, Forestales, Santo Tomé</span></p>
+                <p>Peso: <span id="modal-weight">312Kb</span></p>
+                <p>Dimensiones: <span id="modal-dimensions">800px x 600px</span></p>
+            </div>
+            <div class="modal-purchase">
+                <h4>Opciones de descarga</h4>
+                <button id="low-quality-btn" class="download-option">Descargar (100Kb)</button>
+                <button id="high-quality-btn" class="download-option">Descargar (800Kb)</button>
+                <p id="price-info">Precio: <span id="download-price">$10</span></p>
+            </div>
+        </div>
+        <div class="tyc">
+            <button><a href="termCon.html">Términos, condiciones y tipos de licencias</a></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+  
+
+
+    <div class="footer-sections">
+        <div class="logo">
+          <img src="fotos/logo Agencia-02-02.png" alt="Agencia Imagen Documental Logo">
+        </div>
+        <div class="paddFoot">
+          <h3>Contacto</h3>
+          <p>agencia@imagendocumental.com</p>
+        </div>
+        <div class="paddFoot">
+          <h3>Nosotros</h3>
+          <p>Conócenos</p>
+        </div>
+        <div class="paddFoot">
+          <h3>Productos</h3>
+          <p>Catálogo</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2024 Agencia Imagen Documental. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Inicio JS -->
+
+    <script src="js/scripts.js"></script>
+    <script src="foroScripts.js"></script>
+    <script>// Selección de elementos
+        const modal = document.getElementById('modal');
+        const closeModal = document.querySelector('.close');
+        const downloadBtn = document.getElementById('download-btn');
+        const priceElement = document.getElementById('price');
+        
+        // Variables para precios
+        const lowQualityPrice = 5;  // Precio en créditos para baja calidad
+        const highQualityPrice = 10; // Precio en créditos para alta calidad
+        
+        // Mostrar modal cuando sea necesario (implementación depende de tu estructura actual)
+        function showModal() {
+            modal.style.display = 'flex';
+        }
+        
+        // Cerrar modal
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        
+        // Cambiar precio al seleccionar la calidad
+        document.querySelectorAll('input[name="quality"]').forEach((input) => {
+            input.addEventListener('change', function() {
+                if (this.value === 'low') {
+                    priceElement.textContent = lowQualityPrice;
+                } else if (this.value === 'high') {
+                    priceElement.textContent = highQualityPrice;
+                }
+            });
+        });
+        
+        // Redirigir al usuario cuando confirma la descarga
+        downloadBtn.addEventListener('click', function() {
+            const selectedQuality = document.querySelector('input[name="quality"]:checked');
+            
+            if (selectedQuality) {
+                const quality = selectedQuality.value;
+        
+                // Redirigir a una página con detalles de la descarga
+                if (quality === 'low') {
+                    window.location.href = 'descarga_baja_calidad.html';  // Página de baja calidad
+                } else if (quality === 'high') {
+                    window.location.href = 'descarga_alta_calidad.html';  // Página de alta calidad
+                }
+            } else {
+                alert('Por favor, selecciona una calidad de descarga.');
+            }
+        });
+        
+
+    </script>
+</body>
+</html>
